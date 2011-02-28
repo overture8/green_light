@@ -18,11 +18,11 @@ Add this to your Gemfile and run the +bundle+ command.
 
 * Insert the following javascript include tag in your layout html header:-
   
-  <%= javascript_include_tag 'jquery-1.4.4.min', 'jquery.validate.min', 'jquery.validate_regex', 'green_light' %>  
+  <tt><%= javascript_include_tag 'jquery-1.4.4.min', 'jquery.validate.min', 'jquery.validate_regex', 'green_light' %></tt>
 
 * Add the <tt>validate_with_ajax</tt> class to the forms that you wish to have client side validation:-
 
-  <%= form_for(@model, :html => { :class => 'validate_with_ajax' }) do |f| %>
+  <tt><%= form_for(@model, :html => { :class => 'validate_with_ajax' }) do |f| %></tt>
 
 * Add some validations to your models!
 
