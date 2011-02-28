@@ -8,7 +8,6 @@ Provides client side validation (with the help of the jquery validation plugin) 
 Add this to your Gemfile and run the +bundle+ command.
 
   gem 'green_light', :git => 'git://github.com/overture8/green_light.git'
-
   bundle install
 
 
