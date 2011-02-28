@@ -12,19 +12,19 @@ Add this to your Gemfile and run the +bundle+ command.
 
 == Usage
 
-- Run this generator to copy the required assets to your public folder:-
+Run this generator to copy the required assets to your public folder:-
 
   rails g green_light_assets
 
-- Insert the following javascript include tag in your layout html header:-
+Insert the following javascript include tag in your layout html header:-
   
   <%= javascript_include_tag 'jquery-1.4.4.min', 'jquery.validate.min', 'jquery.validate_regex', 'green_light' %>
 
-- Add the <tt>validate_with_ajax</tt> class to the forms that you wish to have client side validation:-
+Add the <tt>validate_with_ajax</tt> class to the forms that you wish to have client side validation:-
 
   <%= form_for(@model, :html => { :class => 'validate_with_ajax' }) do |f| %>
 
-- Add some validations to your models!
+Add some validations to your models!
 
 
 == Currently Supports these validations
