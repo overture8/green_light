@@ -5,7 +5,7 @@ Provides client side validation (with the help of the jquery validation plugin) 
 
 == Installation
 
-Add this to your Gemfile and run the +bundle+ command.
+Add green_light to your Gemfile and run the +bundle install+ command.
 
   gem 'green_light', :git => 'git://github.com/overture8/green_light.git'
   bundle install
@@ -36,3 +36,8 @@ And finally, add some validations to your models!
   validates_uniqueness_of
   validates_numericality_of
 
+
+== Running the Tests
+
+  bundle install
+  bundle exec rspec spec/green_light_spec.rb
