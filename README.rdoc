@@ -40,4 +40,4 @@ And finally, add some validations to your models!
 == Running the Tests
 
   bundle install
-  bundle exec rspec spec/green_light_spec.rb
+  bundle exec rspec spec
