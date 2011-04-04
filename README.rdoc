@@ -5,9 +5,9 @@ Provides client side validation (with the help of the jquery validation plugin) 
 
 == Installation
 
-Add green_light to your Gemfile and run the +bundle install+ command.
+Add green_light to your Gemfile and run the bundle install command.
 
-  gem 'green_light', :git => 'git://github.com/overture8/green_light.git'
+  gem 'green_light'
   bundle install
 
 
@@ -17,9 +17,13 @@ Run this generator to copy the required assets to your public folder:-
 
   rails g green_light_assets
 
-Insert the following javascript include tag in your layout html header:-
+Download jQuery and the {jQuery Validation Plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/] and include them in your layout header.
+
+Also, insert the following javascript include tag in your layout html header:-
   
-  <%= javascript_include_tag 'jquery-1.4.4.min', 'jquery.validate.min', 'jquery.validate_regex', 'green_light' %>
+  <%= javascript_include_tag 'jquery.validate_regex', 'green_light' %>
+
+Note, the green_light file specified above is generated dynamically, so it wont appear in your public javascripts folder.
 
 Add the <tt>green_light</tt> class to the forms that you wish to have client side validation:-
 
@@ -35,6 +39,11 @@ And finally, add some validations to your models!
   validates_format_of
   validates_uniqueness_of
   validates_numericality_of
+
+
+== Requirements
+
+  jQuery versions 1.3.2, 1.4.2, 1.4.4, 1.5.0, 1.5.1
 
 
 == Running the Tests
