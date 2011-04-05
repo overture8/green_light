@@ -19,7 +19,7 @@ Run this generator to copy the required assets to your public folder:-
 
 Download {jQuery}[http://jquery.com/] and the {jQuery Validation Plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/] and include them in your layout header.
 
-  <%= javascript_include_tag 'jquery-1.x.x', 'jquery.validate' %>
+  <%= javascript_include_tag 'jquery-1.x.x.min', 'jquery.validate.min' %>
 
 Also, insert the following javascript include tag in your layout html header:-
   
