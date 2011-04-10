@@ -25,7 +25,8 @@ module GreenLight
         validation_objs.each do |val_obj|
           params[:val_obj] = val_obj
           # Call each validation method
-          result = send(val_obj.class.name.split('::').last.underscore, params)
+          validation_method = val_obj.class.name.split('::').last.underscore
+          result = send(validation_method, params) if respond_to? validation_method
           data.merge!(result) unless result.nil?
         end
         data
