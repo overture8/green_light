@@ -42,6 +42,8 @@ And finally, add some validations to your models!
   validates_uniqueness_of
   validates_numericality_of
 
+For validations that are not yet supported, the gem will degrade gracefully to the standard Rails server-side validation.
+
 
 == Requirements
 
