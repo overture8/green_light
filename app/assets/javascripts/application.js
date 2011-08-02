@@ -7,5 +7,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.validate
-//= require validate_regex
+//= require tree .
 //= green_light
