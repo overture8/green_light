@@ -1,6 +1,6 @@
 = green_light
 
-Provides client side validation (with the help of the jquery validation plugin) while keeping validation in the model, where it belongs.
+Provides client side validation (with the help of the [jquery validation plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)) while keeping validation in the model, where it belongs.
 
 
 == Installation
@@ -17,7 +17,7 @@ Generate the required green_light configuration:-
 
   rails g green_light:install
 
-Include the JQuery validation plugin and green_light javascript in your application.js file
+Include the JQuery validation plugin and green_light javascript in your application.js file:-
 
   //= require jquery.validate
   //= require green_light
