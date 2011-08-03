@@ -44,7 +44,7 @@ And finally, add some validations to your models!
 For validations that are not yet supported, the gem will degrade gracefully to the standard Rails server-side validation.
 
 
-== Legecy Rails 3 Support
+== Legacy Rails 3 Support
 
 For Rails 3 support use the older version (0.0.3) of green_light
 
