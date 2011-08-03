@@ -1,0 +1,23 @@
+/**
+ * Build validation rules based on models specified in the green_light config
+ */ 
+<% unless GREEN_LIGHT[:validate_models].empty? %>
+  <% @rules = GreenLight::Rules.generate(GREEN_LIGHT[:validate_models]) %>
+  $().ready(function() {
+    $(".green_light").validate(<%= @rules.html_safe %>);
+  });
+<% end %>
+
+/**
+ * Custom code for regex validation
+ */ 
+$.validator.addMethod(
+  "regex",
+  function(value, element, regexp) {
+    var check = false;
+    var re = new RegExp(regexp);
+    return this.optional(element) || re.test(value);
+  },
+  "You have entered an invalid value for this field"
+);
+

@@ -9,7 +9,7 @@ module GreenLight
     def self.generate(models)
       data, rules = {}, {}
       models.each do |model| 
-        model._validators.each do |field_name, validations| 
+        model.constantize._validators.each do |field_name, validations| 
           rules["#{model.to_s.underscore.downcase}[#{field_name}]"] = parse_each_validation(model, field_name, validations)
           data[:rules] = rules
         end

@@ -1,20 +1,4 @@
 /**
- * Custom code for regex validation
- */ 
-$.validator.addMethod(
-  "regex",
-  function(value, element, regexp) {
-    var check = false;
-    var re = new RegExp(regexp);
-    return this.optional(element) || re.test(value);
-  },
-  "You have entered an invalid value for this field"
-);
-
-
-
-
-/**
  * jQuery Validation Plugin 1.8.1
  *
  * http://bassistance.de/jquery-plugins/jquery-plugin-validation/
