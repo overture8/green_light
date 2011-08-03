@@ -1,6 +1,6 @@
 = green_light
 
-Provides client side validation, with the help of the [jquery validation plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation/), while keeping validation in the model, where it belongs.
+Provides client side validation, with the help of the {jquery validation plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/], while keeping validation in the model, where it belongs.
 
 
 == Installation
