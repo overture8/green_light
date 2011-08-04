@@ -5,10 +5,9 @@ Provides client side validation, with the help of the {jquery validation plugin}
 
 == Installation
 
-Add green_light to your Gemfile and run the bundle install command.
+Add green_light to your Gemfile and run then <tt>bundle install</tt> command.
 
   gem 'green_light'
-  bundle install
 
 
 == Usage
@@ -17,7 +16,7 @@ Generate the required green_light configuration:-
 
   rails g green_light:install
 
-Include the JQuery validation plugin in your app/assets/javascripts/application.js file:-
+Include the JQuery validation plugin in your <tt>app/assets/javascripts/application.js</tt> file:-
 
   //= require jquery.validate
 
@@ -25,7 +24,7 @@ Since the validation rules are creating dynmically they need to be included at t
 
   <%= javascript_include_tag "green_light" %>
 
-Specify which models you want to have client-side validation in the config/green_light.yml file e.g.:-
+Specify which models you want to have client-side validation in the <tt>config/green_light.yml</tt> file e.g.:-
 
   validate_models: ['ModelName1', 'ModelName2']
 
@@ -54,7 +53,7 @@ For Rails 3 support use the older version (0.0.3) of green_light
 
 == Requirements
 
-JQuery is require for the {jquery validation plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/].  Be sure to include this in your application.js file:-
+JQuery is require for the {jquery validation plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/].  Be sure to include this in your <tt>application.js</tt> file:-
 
   //= require jquery
 
