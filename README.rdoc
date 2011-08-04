@@ -5,7 +5,7 @@ Provides client side validation, with the help of the {jquery validation plugin}
 
 == Installation
 
-Add green_light to your Gemfile and run then <tt>bundle install</tt> command.
+Add green_light to your Gemfile and run the <tt>bundle install</tt> command.
 
   gem 'green_light'
 
