@@ -1,8 +1,7 @@
 /**
  * Build validation rules based on models specified in the green_light config
  */ 
-<% unless GREEN_LIGHT[:validate_models].empty? %>
-  <% @rules = GreenLight::Rules.generate(GREEN_LIGHT[:validate_models]) %>
+<% if @rules %>
   $().ready(function() {
     $(".green_light").validate(<%= @rules.html_safe %>);
   });

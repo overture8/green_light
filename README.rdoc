@@ -17,10 +17,13 @@ Generate the required green_light configuration:-
 
   rails g green_light:install
 
-Include the JQuery validation plugin and green_light javascript in your application.js file:-
+Include the JQuery validation plugin in your app/assets/javascripts/application.js file:-
 
   //= require jquery.validate
-  //= require green_light
+
+Since the validation rules are creating dynmically they need to be included at the top of your layout file:-
+
+  <%= javascript_include_tag "green_light" %>
 
 Specify which models you want to have client-side validation in the config/green_light.yml file e.g.:-
 
