@@ -20,7 +20,7 @@ Include the JQuery validation plugin in your <tt>app/assets/javascripts/applicat
 
   //= require jquery.validate
 
-Since the validation rules are creating dynmically they need to be included at the top of your layout file:-
+Since the validation rules are creating dynmically they need to be included in the header of your layout file:-
 
   <%= javascript_include_tag "green_light" %>
 
