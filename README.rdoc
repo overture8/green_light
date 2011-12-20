@@ -36,7 +36,7 @@ And finally, add some validations to your models!
 
 
 == Currently Supports these validations
-  
+
   validates_presence_of
   validates_length_of
   validates_format_of

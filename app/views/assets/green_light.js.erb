@@ -1,6 +1,6 @@
 /**
  * Build validation rules based on models specified in the green_light config
- */ 
+ */
 <% if @rules %>
   $().ready(function() {
     $(".green_light").validate(<%= @rules.html_safe %>);
@@ -9,7 +9,7 @@
 
 /**
  * Custom code for regex validation
- */ 
+ */
 $.validator.addMethod(
   "regex",
   function(value, element, regexp) {

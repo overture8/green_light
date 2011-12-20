@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "green_light/version"
 
 Gem::Specification.new do |s|
-  s.name        = "green_light"                                                                                                                                                                              
+  s.name        = "green_light"
   s.version     = GreenLight::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Phil McClure"]
