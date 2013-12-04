@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/spec_helper'
 describe GreenLight do
   before(:all) do
   end
-      
+
   it "should return a valid json string when validating the format of a field" do
     rules = GreenLight::Rules.generate(['FormatOfModel'])
     rules.should == "{\"errorElement\":\"span\",\"rules\":{\"format_of_model[title]\":{\"regex\":\"(^[A-Za-z]$)\"}}}"
