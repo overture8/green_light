@@ -1,4 +1,5 @@
 class AssetsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   respond_to :js
 
   def green_light
