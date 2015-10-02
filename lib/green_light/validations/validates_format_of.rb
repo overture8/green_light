@@ -5,7 +5,7 @@ module GreenLight
 
       module ClassMethods
         def format_validator(params = {})
-          {:regex => "#{params[:val_obj].options[:with]}".gsub('?-mix:', '')}
+          {:regex => "#{params[:val_obj].options[:with]}".gsub('?-mix:', '').gsub('\\A', '^').gsub('\\z', '$')}
         end
       end
     end
