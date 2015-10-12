@@ -1,4 +1,5 @@
 language: ruby
+sudo: false
 deploy:
   api_key:
     secure: B51IrAkE9tgScezWZ4ZxLY0diopv3a5/CYy3jqQqGea7N2OBQTnD0NaS614zo68bQi2mZu2Tjp4KBagI87aG+3mJW+jJR3M7lasngeOvHgISgOs0NnMqi3n+2ZgBLYrQbyCxjF9CCYzB2ZuJL6tubV7U68ZCD7RPKbt876zHd2Q=
