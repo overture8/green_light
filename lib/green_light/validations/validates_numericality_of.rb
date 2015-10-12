@@ -5,7 +5,7 @@ module GreenLight
 
       module ClassMethods
         def numericality_validator(params = {})
-          {:regex => "^[0-9]*$"}
+          {:regex => "^[0-9\.]*$"}
         end
       end
     end
