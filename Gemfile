@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'rails',"4.1.4"
+gem 'rails',"4.1.8"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -13,5 +13,5 @@ gem 'jquery-rails'
 
 group :test do
   gem 'rspec'
-  gem 'supermodel'
+  gem 'rake'
 end
