@@ -18,7 +18,7 @@ describe GreenLight do
 
   it "should return a json string when validating the numericality of a field" do
     rules = GreenLight::Rules.generate(['NumericalityOfModel'])
-    expect(rules).to eq("{\"rules\":{\"numericality_of_model[age]\":{\"regex\":\"^[0-9]*$\"}},\"errorElement\":\"span\"}")
+    expect(rules).to eq("{\"rules\":{\"numericality_of_model[age]\":{\"regex\":\"^[0-9.]*$\"}},\"errorElement\":\"span\"}")
   end
 
   it "should return a json string when validating the uniqueness of a field" do
