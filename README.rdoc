@@ -1,4 +1,4 @@
-= green_light
+= green_light {<img src="https://travis-ci.org/overture8/green_light.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/overture8/green_light]
 
 Provides client side validation, with the help of the {jquery validation plugin}[http://bassistance.de/jquery-plugins/jquery-plugin-validation/].  Keeping validation in the model, where it belongs.
 
